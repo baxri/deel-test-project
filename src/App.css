@@ -1,7 +1,7 @@
 .search-container {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
 }
 

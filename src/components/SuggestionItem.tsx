@@ -14,8 +14,14 @@ export default function SuggestionItem({ item, searchTerm }: Props) {
     [searchTerm]
   );
 
-  const title = item.title.replace(regex, HIGHLIGHT_TEMPLATE);
-  const description = item.description.replace(regex, HIGHLIGHT_TEMPLATE);
+  const title = useMemo(
+    () => item.title.replace(regex, HIGHLIGHT_TEMPLATE),
+    [item.title, regex]
+  );
+  const description = useMemo(
+    () => item.description.replace(regex, HIGHLIGHT_TEMPLATE),
+    [item.description, regex]
+  );
 
   return (
     <div key={item.id} className="suggestion-item">
