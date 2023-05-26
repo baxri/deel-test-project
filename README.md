@@ -1,3 +1,7 @@
+# Project deployed URL
+
+To check the project funtionality visit here: [https://deel-test-project.vercel.app/](https://deel-test-project.vercel.app/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
